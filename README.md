@@ -1,8 +1,74 @@
-# React + Vite
+# CityZen Ecommerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an e-commerce website built using React, Vite, Tailwind CSS, and Framer Motion. The site includes pages for Home, About, Products, Contact, and Cart, showcasing modern home decor products with integrated smart home features.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [CityZen Ecommerce Website](#cityzen-ecommerce-website)
+  - [Table of Contents](#table-of-contents)
+  - [Project Setup](#project-setup)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Components Overview](#components-overview)
+    - [Common Components](#common-components)
+    - [Page-Specific Components](#page-specific-components)
+  - [Pages Overview](#pages-overview)
+
+## Project Setup
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   
+   git clone https://github.com/ValeriiaHubenko/cityzen-shop.git
+   cd cityzen-shop
+
+2. Install dependencies:
+   npm install
+
+3. Start the development server:
+   npm run dev
+
+4. Open your browser and navigate to http://localhost:3000.
+
+
+## Components Overview
+### Common Components
+- Header
+- Footer
+- HeroSection
+- SubscribeSection
+
+### Page-Specific Components
+- HomePage
+    * HeroSection
+    * AboutSection
+    * FeaturedSection
+    * AdvantagesSection
+    * SubscribeSection
+  
+- AboutPage
+    * HeroSection
+    * Aboutsection
+    * ValuesSection
+
+- ProductsPage
+    * HeroSection
+    * ProductList
+  
+- ContactPage
+    * ContactForm
+  
+- CartPage
+
+## Pages Overview
+  * Home
+  * About
+  * Products
+  * Contact
+  * Cart
