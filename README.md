@@ -64,7 +64,9 @@ This project is an e-commerce website built using React, Vite, Tailwind CSS, and
 - ContactPage
     * ContactForm
   
+- ProductInfoPage
 - CartPage
+- CheckoutPage
 
 ## Pages Overview
   * Home
@@ -72,3 +74,5 @@ This project is an e-commerce website built using React, Vite, Tailwind CSS, and
   * Products
   * Contact
   * Cart
+  * Checkout
+  * Product Info

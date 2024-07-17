@@ -1,5 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: #F8F8F8;
+    overflow-x: hidden;
 }
 /* 
   .wrapper {
@@ -16,3 +21,9 @@ body {
       top: $i * 350px;
     }
   }
+
+/* .item:hover {
+      border: pink;
+      border: 2;
+      color: pink;
+  } */

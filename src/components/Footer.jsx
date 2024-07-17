@@ -2,7 +2,7 @@ import { Link } from "wouter";
 
 const Footer = () => (
     <>
-      <div className="w-full h-64 bg-black flex items-center justify-between rounded-tl-[50px] rounded-tr-[50px] px-20 sticky">
+      <div className="w-full h-[245px] bg-black flex items-center justify-between rounded-tl-[50px] rounded-tr-[50px] px-20 sticky mt-10">
         <div className="flex flex-col items-left gap-[14px]">
         <Link href="/cityzen">
             <img
@@ -20,10 +20,10 @@ const Footer = () => (
         </div>
         <div className="flex flex-row items-center gap-[70px]">
             <div className="flex flex-col items-left gap-5">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15.9993 21.3337C17.4138 21.3337 18.7704 20.7718 19.7706 19.7716C20.7708 18.7714 21.3327 17.4148 21.3327 16.0003C21.3327 14.5858 20.7708 13.2293 19.7706 12.2291C18.7704 11.2289 17.4138 10.667 15.9993 10.667C14.5849 10.667 13.2283 11.2289 12.2281 12.2291C11.2279 13.2293 10.666 14.5858 10.666 16.0003C10.666 17.4148 11.2279 18.7714 12.2281 19.7716C13.2283 20.7718 14.5849 21.3337 15.9993 21.3337Z" stroke="#F8F8F8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M4 21.3333V10.6667C4 8.89856 4.70238 7.20286 5.95262 5.95262C7.20286 4.70238 8.89856 4 10.6667 4H21.3333C23.1014 4 24.7971 4.70238 26.0474 5.95262C27.2976 7.20286 28 8.89856 28 10.6667V21.3333C28 23.1014 27.2976 24.7971 26.0474 26.0474C24.7971 27.2976 23.1014 28 21.3333 28H10.6667C8.89856 28 7.20286 27.2976 5.95262 26.0474C4.70238 24.7971 4 23.1014 4 21.3333Z" stroke="#F8F8F8" strokeWidth="2"/>
-            <path d="M23.334 8.67879L23.3465 8.66504" stroke="#F8F8F8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <svg width="35" height="35" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.9993 21.3337C16.4138 21.3337 17.7704 20.7718 18.7706 19.7716C19.7708 18.7714 20.3327 17.4148 20.3327 16.0003C20.3327 14.5858 19.7708 13.2293 18.7706 12.2291C17.7704 11.2289 16.4138 10.667 14.9993 10.667C13.5849 10.667 12.2283 11.2289 11.2281 12.2291C10.2279 13.2293 9.66602 14.5858 9.66602 16.0003C9.66602 17.4148 10.2279 18.7714 11.2281 19.7716C12.2283 20.7718 13.5849 21.3337 14.9993 21.3337Z" stroke="#F8F8F8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M3 21.3333V10.6667C3 8.89856 3.70238 7.20286 4.95262 5.95262C6.20286 4.70238 7.89856 4 9.66667 4H20.3333C22.1014 4 23.7971 4.70238 25.0474 5.95262C26.2976 7.20286 27 8.89856 27 10.6667V21.3333C27 23.1014 26.2976 24.7971 25.0474 26.0474C23.7971 27.2976 22.1014 28 20.3333 28H9.66667C7.89856 28 6.20286 27.2976 4.95262 26.0474C3.70238 24.7971 3 23.1014 3 21.3333Z" stroke="#F8F8F8" strokeWidth="2"/>
+            <path d="M22.334 8.67879L22.3465 8.66504" stroke="#F8F8F8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
 
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,15 +38,15 @@ const Footer = () => (
 
             <div className="flex flex-col items-left gap-5">
             <Link href="/products"
-            className="text-white text-[22px] font-medium font-chillax hover:text-pink hover:font-semibold active:text-pink"
+            className="text-white text-[22px] font-medium font-chillax hover:text-pink  active:text-pink"
             >Products
             </Link>
             <Link href="/about"
-            className="text-white text-[22px]  font-medium font-chillax hover:text-pink hover:font-semibold active:text-pink"
+            className="text-white text-[22px]  font-medium font-chillax hover:text-pink  active:text-pink"
             >About
             </Link>
             <Link href="/contact"
-            className="text-white text-[22px]  font-medium font-chillax hover:text-pink hover:font-semibold active:text-pink"
+            className="text-white text-[22px]  font-medium font-chillax hover:text-pink  active:text-pink"
             >Contact
             </Link>
         </div>

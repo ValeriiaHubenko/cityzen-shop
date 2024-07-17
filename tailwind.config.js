@@ -12,6 +12,7 @@ export default {
         'black': '#040204',
         'darkgray': '#757575',
         'lightgray': '#9E9DA5',
+        'yellow': '#F2C217',
       },
       fontFamily: {
         chillax: ['"Chillax"', 'sans-serif'],
