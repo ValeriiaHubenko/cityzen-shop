@@ -9,25 +9,25 @@ const CartModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed top-24 right-16 border-2 border-pink rounded-3xl bg-white shadow-lg px-6 py-4 z-50">
+    <div className="fixed top-24 right-16 border-2 border-pink rounded-3xl bg-white shadow-lg py-4 z-50">
       <button onClick={onClose} className="text-right font-chillax text-xl font-semibold absolute top-3 right-5 text-darkgray">X</button>
-      <h2 className="text-[30px] font-chillax font-semibold mt-3 text-black mb-2 text-left">Cart</h2>
+      <h2 className="text-[30px] font-chillax font-semibold mt-3 text-black mb-2 text-left ml-6">Cart</h2>
       <div className="w-full h-0.5 bg-pink mb-4"></div>
       {cart.length === 0 ? (
         <>
-        <div className="text-[26px] font-chillax font-medium mt-5 text-black mb-5 text-center">Your cart is empty now :(</div>
-        <Link href="/products" className="w-[185px] h-[74px] flex justify-center items-center border-4 border-dashed border-pink rounded-full bg-transparent  text-pink text-[20px] font-medium font-chillax capitalize hover:bg-pink hover:text-white hover:border-white active:bg-pink mt-4 mb-4 mx-auto">Go To Shop</Link>
+        <div className="text-[26px] font-chillax font-medium mt-5 text-black mb-5 text-center mx-10">Your cart is empty now :(</div>
+        <Link href="/products" className="w-[185px] h-[74px] flex justify-center items-center border-4 border-dashed border-pink rounded-full bg-transparent  text-pink text-[20px] font-medium font-chillax capitalize hover:bg-pink hover:text-white hover:border-white active:bg-pink mt-4 mb-3 mx-auto">Go To Shop</Link>
         </>
       ) : (
         cart.map(item => (
             <>
-          <div key={item.id} className="flex flex-row gap-4 mb-4 items-center">
+          <div key={item.id} className="flex flex-row gap-4 mb-4 items-center ml-6 mr-3">
             <img src={item.image} alt={item.title} className="w-[90px] h-[90px] rounded-2xl border border-darkgray"/>
             <div className="flex flex-row gap-12 items-center">
               <div className="flex flex-col gap-1">
               <div className="font-semibold text-[22px] font-chillax text-left text-black">{item.title}</div>
               <div className="flex flex-row gap-10 items-center">
-              <div className="font-medium text-[20px] font-chillax text-left text-darkgray">${item.totalPrice}</div>
+              <div className="font-medium text-[18px] font-chillax text-left text-darkgray">${item.totalPrice}</div>
               <div className="font-medium text-[18px] font-chillax text-left text-black">Qty: {item.quantity}</div>
             </div>
             </div>
@@ -39,13 +39,13 @@ const CartModal = ({ isOpen, onClose }) => {
             </div>
           </div>
 
-        <div className="w-full h-0.5 bg-pink border border-dashed mb-3 mt-5"></div>
+        <div className="w-full h-0.5 bg-pink border border-dashed mb-3 mt-6"></div>
         <div className="flex gap-72 items-center">
-    <div className="text-black text-2xl font-semibold font-chillax">Total</div>
-    <div className="text-black text-[20px] font-medium font-chillax">{calculateTotalPrice()}$</div>
+    <div className="text-black text-2xl font-semibold font-chillax ml-6">Total</div>
+    <div className="text-black text-[20px] font-medium font-chillax mr-5">{calculateTotalPrice()}$</div>
 
         </div>
-        <Link href="/checkout" className="w-[185px] h-[74px] flex justify-center items-center border-4 border-dashed border-pink rounded-full bg-transparent  text-pink text-[20px] font-medium font-chillax capitalize hover:bg-pink hover:text-white hover:border-white active:bg-pink mt-3 mb-3 mx-auto">Checkout</Link>
+        <Link href="/checkout" className="w-[185px] h-[74px] flex justify-center items-center border-4 border-dashed border-pink rounded-full bg-transparent  text-pink text-[20px] font-medium font-chillax capitalize hover:bg-pink hover:text-white hover:border-white active:bg-pink mt-3 mb-2 mx-auto">Checkout</Link>
     </>
 ))
 )}

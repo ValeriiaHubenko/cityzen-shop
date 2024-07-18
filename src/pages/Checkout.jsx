@@ -2,10 +2,12 @@ import { Link } from "wouter";
 import { useState } from 'react';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { useCart } from "../components/CartContext";
 
 const Home = () => {
         const [email, setEmail] = useState('');
         const [emailError, setEmailError] = useState('');
+        const { calculateTotalPrice } = useCart();
 
         const validateEmail = (event) => {
             setEmail(event.target.value);
@@ -116,15 +118,15 @@ const Home = () => {
 
 
 <div className="flex flex-col gap-4 w-[580px] bg-pink/35 border-l-2 border-lightgray">
-<div className="flex flex-col gap-4 items-center pr-4">
+<div className="flex flex-col gap-4 items-center">
 
 <div className="flex flex-row gap-5 mt-10">
-    <img className="w-[100px] h-[100px] rounded-2xl border-1 border-darkgray hover:border-pink hover:border-2"  src="public/images/Rectangle 10.png"
+    <img className="w-[100px] h-[100px] rounded-2xl border-2 border-darkgray hover:border-pink hover:border-2"  src="public/images/Rectangle 10.png"
     alt="Lighting Image" />
     <div className="flex flex-col gap-2 justify-center">
         <div className="flex flex-row gap-14 items-center">
     <div className="text-black text-2xl font-semibold font-chillax mt-1 hover:text-pink active:text-pink">Smart Celling Light</div>
-    <div className="text-black text-xl font-medium font-chillax mt-1">300$</div>
+    <div className="text-black text-xl font-medium font-chillax mt-1">{calculateTotalPrice()}$</div>
     </div>
     <div className="text-black text-lg font-medium font-chillax">Qty:1</div>
         </div>
@@ -133,7 +135,7 @@ const Home = () => {
 
     <div className="flex flex-row mt-2 gap-80">
     <div className="text-black text-xl font-medium font-chillax">Subtotal</div>
-    <div className="text-black text-xl font-medium font-chillax">300$</div>
+    <div className="text-black text-xl font-medium font-chillax">{calculateTotalPrice()}$</div>
     </div>
 
     <div className="flex flex-row gap-72">
@@ -149,11 +151,11 @@ const Home = () => {
         <div className="text-black text-xl font-medium font-chillax text-right">0$</div>
     </div>
 
-<div className="lg:w-full h-0.5 bg-lightgray mt-4"></div>
+<div className="w-full h-0.5 bg-lightgray mt-4"></div>
 
 <div className="flex flex-row gap-80 items-center mt-2">
     <div className="text-black text-[28px] font-semibold font-chillax">Total</div>
-    <div className="text-black text-2xl font-medium font-chillax">300$</div>
+    <div className="text-black text-2xl font-medium font-chillax">{calculateTotalPrice()}$</div>
 </div>
 
 </div>

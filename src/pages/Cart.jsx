@@ -83,7 +83,7 @@ const Cart = () => {
 <div className="flex flex-col gap-4 justify-between items-start px-7">
     <div className="flex flex-row mt-7 gap-28">
     <div className="text-black text-xl font-semibold font-chillax">Smart Ceiling Light</div>
-    <div className="text-black text-xl font-medium font-chillax">300$</div>
+    <div className="text-black text-xl font-medium font-chillax">{calculateTotalPrice()}$</div>
     </div>
 
     <div className="flex flex-row gap-52">

@@ -20,15 +20,15 @@ const Products = () => {
   const slides = [
     {
       image: "public/images/Rectangle 3.jpg",
-      heading: "Intersection of bold style and smart functionality"
+      heading: "Intersection of bold style and smart functionality",
     },
     {
       image: "public/images/Rectangle 19.jpg",
-      heading: "Innovative solutions for a smarter home"
+      heading: "Innovative solutions for a smarter home",
     },
     {
       image: "public/images/Rectangle 2.jpg",
-      heading: "Functional pieces that make a statement"
+      heading: "Functional pieces that make a statement",
     }
   ];
 
@@ -96,3 +96,4 @@ const Products = () => {
 };
 
 export default Products;
+

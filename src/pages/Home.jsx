@@ -129,7 +129,7 @@ const Home = () => (
     </div>
 
     <div className="flex justify-center mt-9">
-          <Link href="/products#productsrange" className="w-[225px] h-20 flex justify-center items-center border-4 border-dashed border-pink rounded-full bg-transparent  text-pink text-2xl font-medium font-chillax capitalize hover:bg-pink hover:text-white active:bg-pink active:text-white hover:border-white active:border-white">Shop Now</Link>
+          <a href="/products#productsrange" className="w-[225px] h-20 flex justify-center items-center border-4 border-dashed border-pink rounded-full bg-transparent  text-pink text-2xl font-medium font-chillax capitalize hover:bg-pink hover:text-white active:bg-pink active:text-white hover:border-white active:border-white">Shop Now</a>
     </div>
 
     </div>
