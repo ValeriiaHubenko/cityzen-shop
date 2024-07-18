@@ -14,7 +14,6 @@ import Contact from "./pages/Contact";
 // import MenuProducts from './components/MenuProducts'
 import "./App.css";
 
-const base = "/cityzen-shop";
 
 function App() {
   return (
