@@ -32,8 +32,10 @@ const Cart = () => {
 {cart.map((item) => (
     <>
     <div key={item.id} className="flex flex-row gap-9 pl-20">
+    <Link href="/productinfo/:lighting1">    
     <img className="w-32 h-32 rounded-2xl border-2 border-darkgray hover:border-pink hover:border-2"  src={item.image}
     alt="Lighting Image" />
+    </Link>
     <div className="flex flex-col gap-4 justify-center">
     <Link href="/productinfo/:lighting1" className="text-black text-[28px] font-semibold font-chillax  hover:text-pink active:text-pink">{item.title}</Link >
     
@@ -113,8 +115,8 @@ const Cart = () => {
 
 <div className="w-full h-[680px] bg-white rounded-[45px] mt-48 card pt-6">
 <div className="text-black text-[32px] font-semibold capitalize font-chillax text-left pt-14 ml-20">You might also like</div>
-<div className="flex flex-row gap-[80px] pl-20 mt-9 justify-start">
-<Link id="lighting4" to="/productinfo/lighting4" className="flex flex-col gap-4 justify-start">
+<div className="flex flex-row gap-[80px] pl-16 mt-9 justify-start">
+<Link id="lighting4" to="/productinfo/lighting4" className="flex flex-col gap-4 justify-start product-card px-3 pt-2 pb-4 rounded-3xl">
 <img className="w-[314px] h-[314px] rounded-3xl border-2 border-darkgray hover:border-pink hover:border-2" src="/images/lighting.jpg" />
     <div className="text-black text-xl font-semibold font-chillax hover:text-pink active:text-pink">Smart Ceiling Lamp</div>
     <div className="text-darkgray text-base font-medium font-chillax -mt-3">360$</div>
@@ -128,7 +130,7 @@ const Cart = () => {
 </div>
 </Link>
 
-<Link id="lighting3" to="/productinfo/lighting3" className="flex flex-col gap-4 justify-start">
+<Link id="lighting3" to="/productinfo/lighting3" className="flex flex-col gap-4 justify-start product-card px-3 pt-2 pb-4 rounded-3xl">
 <img className="w-[314px] h-[314px] rounded-3xl border-2 border-darkgray hover:border-pink hover:border-2" src="/images/openart-image_eppcqf3B_1719315129653_raw.jpg" />
     <div className="text-black text-xl font-semibold font-chillax hover:text-pink active:text-pink">Smart Ceiling Light </div>
     <div className="text-darkgray text-base font-medium font-chillax -mt-3">390$</div>

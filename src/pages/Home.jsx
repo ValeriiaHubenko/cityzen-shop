@@ -85,7 +85,7 @@ const Home = () => (
         <div className="text-pink text-[38px] font-semibold font-chillax text-center pt-14">Featured Products</div>
     <div className="flex lg:flex-row sm:flex-col gap-[80px] px-[60px] mt-9 justify-center">
 
-    <Link id="wallart16" to="/productinfo/wallart16" className="flex flex-col gap-5 justify-start">
+    <Link id="wallart16" to="/productinfo/wallart16" className="flex flex-col gap-5 justify-start productfirst-card">
     <img className="w-96 h-96 rounded-3xl border-2 border-darkgray hover:border-pink hover:border-2" src="public/images/Rectangle 9.png" />
         <div className="text-white text-3xl font-semibold font-chillax mt-1 hover:text-pink active:text-pink">Smart Wall Art</div>
         <div className="text-darkgray text-lg font-medium font-chillax -mt-4">500$</div>
@@ -99,7 +99,7 @@ const Home = () => (
     </div>
     </Link>
 
-    <Link id="lighting2" to="/productinfo/lighting2" className="flex flex-col gap-5 justify-start">
+    <Link id="lighting2" to="/productinfo/lighting2" className="flex flex-col gap-5 justify-start productfirst-card">
     <img className="w-96 h-96 rounded-3xl border-2 border-darkgray hover:border-pink hover:border-2" src="public/images/Rectangle 10.png" />
         <div className="text-white text-3xl font-semibold font-chillax mt-1 hover:text-pink active:text-pink">Smart Lighting </div>
         <div className="text-darkgray text-lg font-medium font-chillax -mt-4">770$</div>
@@ -113,7 +113,7 @@ const Home = () => (
     </div>
     </Link>
 
-    <Link id="mirror8" to="/productinfo/mirror8" className="flex flex-col gap-5 justify-start">
+    <Link id="mirror8" to="/productinfo/mirror8" className="flex flex-col gap-5 justify-start productfirst-card">
     <img className="w-96 h-96 rounded-3xl border-2 border-darkgray hover:border-pink hover:border-2" src="public/images/Rectangle 8.png" />
         <div className="text-white text-3xl font-semibold font-chillax hover:text-pink active:text-pink mt-1">Smart Mirror</div>
         <div className="text-darkgray text-lg font-medium font-chillax -mt-4">690$</div>

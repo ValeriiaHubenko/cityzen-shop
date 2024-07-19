@@ -153,7 +153,7 @@ const ProductInfo = () => {
 <div className="flex flex-row gap-[80px] pl-20 mt-10 justify-start">
 
 
-<Link id="lighting4" to="/productinfo/lighting4" className="flex flex-col gap-5 justify-start">
+<Link id="lighting4" to="/productinfo/lighting4" className="flex flex-col gap-5 justify-start productfirst-card">
 <img className="w-96 h-96 rounded-3xl border-2 border-darkgray hover:border-pink hover:border-2" src="/images/lighting.jpg" />
     <div className="text-white text-3xl font-semibold font-chillax mt-1 hover:text-pink active:text-pink">Smart Ceiling Lamp</div>
     <div className="text-darkgray text-lg font-medium font-chillax -mt-4">360$</div>
@@ -167,7 +167,7 @@ const ProductInfo = () => {
 </div>
 </Link>
 
-<Link id="lighting3" to="/productinfo/lighting3" className="flex flex-col gap-5 justify-start">
+<Link id="lighting3" to="/productinfo/lighting3" className="flex flex-col gap-5 justify-start productfirst-card">
 <img className="w-96 h-96 rounded-3xl border-2 border-darkgray hover:border-pink hover:border-2" src="/images/openart-image_eppcqf3B_1719315129653_raw.jpg" />
     <div className="text-white text-3xl font-semibold font-chillax mt-1 hover:text-pink active:text-pink">Smart Ceiling Light </div>
     <div className="text-darkgray text-lg font-medium font-chillax -mt-4">390$</div>

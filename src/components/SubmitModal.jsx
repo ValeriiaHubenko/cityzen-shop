@@ -16,7 +16,7 @@ const SubmitModal  = ({ onClose }) => {
                 <div className="text-center text-pink text-5xl font-semibold font-chillax leading-tight mb-4">
                     Thanks for your Message!
                 </div>
-                <div className="text-center text-black text-2xl font-medium font-lato leading-tight">
+                <div className="text-center text-black text-2xl font-medium font-lato leading-tight mb-5">
                     We will answear you as soon as possible
                 </div>
         </div>

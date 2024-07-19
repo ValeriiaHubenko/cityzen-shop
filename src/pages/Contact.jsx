@@ -39,7 +39,7 @@ return (
         <div className="text-[38px] text-center text-black font-semibold font-chillax mb-4 mt-12">Get in <span className="text-pink">Touch</span> with Us</div>
         <div className="flex gap-28 mt-10 justify-center items-center">
         <img className="border-2 border-pink rounded-[40px]" src="/images/ImageContact.jpg" />
-        <div className="flex flex-col gap-4 items-start justify-start">
+        <div className="flex flex-col gap-4 items-start justify-start mt-5">
             <div className="flex flex-col gap-1 items-start justify-start">
             <div className="text-[28px] text-black font-semibold font-chillax">Address:</div>
             <div className="text-2xl text-black font-regular font-chillax">123 Modern St, Urban City, Country</div>

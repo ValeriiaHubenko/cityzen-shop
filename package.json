@@ -1,5 +1,4 @@
 {
-  "homepage": "https://ValeriiaHubenko.github.io/cityzen",
   "name": "cityzen",
   "private": true,
   "version": "0.0.0",
@@ -13,8 +12,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "classnames": "^2.5.1",
+    "clsx": "^2.1.1",
+    "cn": "^0.1.1",
+    "framer-motion": "^11.3.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.4.0",
     "wouter": "^3.3.1"
   },
   "devDependencies": {

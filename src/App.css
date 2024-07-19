@@ -22,8 +22,19 @@ body {
     }
   }
 
-/* .item:hover {
-      border: pink;
-      border: 2;
-      color: pink;
-  } */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(247, 105, 105, 0.362);
+}
+
+.productfirst-card {
+  transition: transform 0.3s ease
+}
+
+.productfirst-card:hover {
+  transform: translateY(-8px);
+}

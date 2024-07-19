@@ -91,10 +91,10 @@ const ProductsRange = ({ selectedCategory }) => {
 
   return (
     <>
-    <div className="flex mx-28">
-    <div className="flex flex-wrap justify-start items-start gap-24">
+    <div className="flex mx-24">
+    <div className="flex flex-wrap justify-start items-start gap-16">
     {displayedProducts.map((product, index) => (
-        <Link key={index}  to={`/productinfo/${product.id}`} className="flex flex-col gap-4 justify-start">
+        <Link key={index}  to={`/productinfo/${product.id}`} className="flex flex-col gap-4 justify-start product-card px-3 pt-2 pb-4 rounded-3xl">
           <img className="w-[340px] h-[340px] rounded-3xl border-2 border-darkgray hover:border-pink hover:border-2" src={product.image} alt={product.title} />
           <div className="text-white text-2xl font-semibold font-chillax mt-1 hover:text-pink active:text-pink">{product.title}</div>
           <div className="text-darkgray text-lg font-medium font-chillax -mt-3">{product.price}</div>
@@ -111,7 +111,7 @@ const ProductsRange = ({ selectedCategory }) => {
       ))}
     </div>
     </div>
-    <div className="flex justify-between px-28 pt-8">
+    <div className="flex justify-between px-28 pt-4">
         <button onClick={handlePreviousPage} disabled={currentPage === 0}>
           <svg className={`w-8 h-8 ${currentPage === 0 ? 'text-darkgray/60' : 'text-white hover:text-pink'}`} width="38" height="22" viewBox="0 0 38 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M38 12.5V9.5H5.35897L12.1795 2L10.7179 0L0 11L10.7179 22L12.1795 20L5.35897 12.5H38Z" fill="currentColor" />

@@ -80,11 +80,11 @@ const Products = () => {
           <MenuProducts selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
         </div>
 
-        <h2 className="text-white text-[38px] font-medium font-chillax text-center pt-10">
+        <h2 className="text-white text-[38px] font-medium font-chillax text-center pt-9">
           <span className="text-white">{categoryHeadings[selectedCategory]}</span>
         </h2>    
 
-        <div className="relative z-10 mt-10">
+        <div className="relative z-10 mt-9">
           <ProductsRange selectedCategory={selectedCategory} />
         </div>
       </div>    
@@ -96,4 +96,7 @@ const Products = () => {
 };
 
 export default Products;
+
+
+
 
