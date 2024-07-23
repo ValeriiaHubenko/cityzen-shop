@@ -26,6 +26,7 @@ This project is an e-commerce website built using React, Vite, Tailwind CSS, and
 1. Clone the repository:
    
    git clone https://github.com/ValeriiaHubenko/cityzen-shop.git
+   
    cd cityzen-shop
 
 2. Install dependencies:
